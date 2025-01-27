@@ -362,6 +362,7 @@ version = "1.0.0"
 dependencies = [
  "anyhow",
  "embedded-svc",
+ "embuild",
  "esp-idf-svc",
  "log",
  "serde",
