@@ -1,3 +1,4 @@
+/// A struct containing common discord colors.
 pub struct Color;
 
 impl Color {

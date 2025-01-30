@@ -33,6 +33,9 @@ pub struct EmbedField {
     pub inline: bool,
 }
 
+/// The whole embed struct. Contains all the data you may require for an embed.
+/// 
+/// Use the provided [super::EmbedBuilder] to aid you in constructing the object, rather than manually building it.
 #[derive(Clone, Serialize)]
 pub struct Embed {
     pub title: Option<String>,

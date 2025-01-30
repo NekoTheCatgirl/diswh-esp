@@ -3,11 +3,15 @@ name = "diswh-esp"
 description = """
 A simple way to send webhook messages on the ESP platform, or edit for discord. Fully featured with builders to make things easy!
 """
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 authors = ["NekoTheCatgirl"]
 readme = "README.md"
 license = "CC0-1.0"
+publish = true
+keywords = [
+    "embedded", "esp32", "discord-webhook"
+]
 repository = "https://github.com/NekoTheCatgirl/diswh-esp"
 
 [dependencies]
@@ -15,7 +19,7 @@ log = "0.4"
 esp-idf-svc = { version = "0.51", features = ["critical-section", "embassy-time-driver", "embassy-sync"] }
 anyhow = "1.0.95"
 serde = { version = "1.0.217", features = ["derive"] }
-serde_json = "1.0.137"
+serde_json = "1.0.138"
 embedded-svc = { version = "0.28", default-features = false }
 
 [build-dependencies]

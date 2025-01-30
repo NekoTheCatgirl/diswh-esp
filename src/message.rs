@@ -5,6 +5,9 @@ use serde_json::{json, Value};
 
 use super::embed::Embed;
 
+/// A message packet contains all the data required by discord to send a message. Empty strings will be ignored however.
+/// 
+/// When sending it to discord, at __least__ 1 embed or `content` must contain data.
 #[derive(Clone, Serialize)]
 pub struct MessagePacket {
     pub content: String,

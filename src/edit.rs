@@ -5,6 +5,7 @@ use serde_json::{json, Value};
 
 use super::embed::Embed;
 
+/// A edit packet, sorta useless given you have to figure out he message id. But could be usefull if you are editing say a Rules embed.
 #[derive(Clone, Serialize)]
 pub struct EditMessagePacket {
     pub content: String,
